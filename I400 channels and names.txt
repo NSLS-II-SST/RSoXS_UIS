@@ -1,0 +1,13 @@
+%{Title} = RSoXS Diagnostics
+I400 = XF:07ID-ES1{DMR:I400-1}
+Ch1 = Beamstop 1 (w)
+Ch2 = Beamstop 2 (s)
+Ch3 = Mesh
+Ch4 = Diode
+
+%{Title} = RSoXS Slit Currents
+I400 = XF:07ID-ES1{Slt1:I400-1}
+Ch1 = Outboard
+Ch2 = Bottom
+Ch3 = Top
+Ch4 = Inboard
