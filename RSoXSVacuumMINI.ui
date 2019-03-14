@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>916</width>
-    <height>75</height>
+    <width>1049</width>
+    <height>68</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -70,286 +70,7 @@
      <property name="spacing">
       <number>1</number>
      </property>
-     <item row="11" column="13" rowspan="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:4}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="8" rowspan="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{Mir:M3C-GV:1}Pos-Sts</string>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="14" rowspan="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_17">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07ID-PPS{Sh:FE}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="12" rowspan="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-VA:2{FS:6-GV:1}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="7" rowspan="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:3{Slt:C-GV:1}Pos-Sts</string>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="0" rowspan="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:7}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="1" rowspan="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{BT:1-GV:1}Pos-Sts</string>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="13" column="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
-       <property name="toolTip">
-        <string>Not Closed</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:2}Sw:ClsLim-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="11" rowspan="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_14">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-VA:2{FS:6-GV:2}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="9" rowspan="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:10}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="13" column="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
-       <property name="toolTip">
-        <string>Opened</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:2}Pos-Sts</string>
-       </property>
-       <property name="orientation" stdset="0">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="numBits" stdset="0">
-        <number>1</number>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="4" rowspan="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:1}Pos-Sts</string>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="2" rowspan="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>10</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string>Opened</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:TP-GV:1}Pos-Sts</string>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="6" rowspan="3">
+     <item row="7" column="5" rowspan="3">
       <widget class="PyDMLabel" name="PyDMLabel_4">
        <property name="minimumSize">
         <size>
@@ -372,7 +93,7 @@
        </property>
       </widget>
      </item>
-     <item row="4" column="6" rowspan="7">
+     <item row="0" column="5" rowspan="7">
       <widget class="PyDMLabel" name="PyDMLabel_3">
        <property name="font">
         <font>
@@ -404,24 +125,45 @@
        </property>
       </widget>
      </item>
-     <item row="4" column="0" rowspan="7" colspan="2">
-      <widget class="PyDMLabel" name="PyDMLabel">
-       <property name="font">
-        <font>
-         <pointsize>16</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
+     <item row="7" column="4" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
        <property name="toolTip">
         <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:LL-CCG:1}P:Raw-I</string>
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:1}Pos-Sts</string>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
-     <item row="11" column="10" rowspan="2">
+     <item row="0" column="2" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>10</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>10</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Opened</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:TP-GV:1}Pos-Sts</string>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="9" rowspan="2">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_13">
        <property name="toolTip">
         <string/>
@@ -448,7 +190,40 @@
        </property>
       </widget>
      </item>
-     <item row="4" column="3" rowspan="3">
+     <item row="0" column="0" rowspan="7" colspan="2">
+      <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:LL-CCG:1}P:Raw-I</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7" rowspan="7" colspan="2">
+      <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://SR-OPS{}Mode-Sts</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="3">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_11">
        <property name="minimumSize">
         <size>
@@ -487,7 +262,7 @@
        </property>
       </widget>
      </item>
-     <item row="4" column="4" rowspan="7">
+     <item row="0" column="4" rowspan="7">
       <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
        <property name="toolTip">
         <string/>
@@ -504,23 +279,7 @@ Control</string>
        </property>
       </widget>
      </item>
-     <item row="4" column="8" rowspan="7" colspan="2">
-      <widget class="PyDMLabel" name="PyDMLabel_2">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://SR-OPS{}Mode-Sts</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="11" rowspan="5" colspan="4">
+     <item row="2" column="10" rowspan="5" colspan="4">
       <widget class="PyDMLabel" name="PyDMLabel_6">
        <property name="font">
         <font>
@@ -543,7 +302,147 @@ Control</string>
        </property>
       </widget>
      </item>
-     <item row="5" column="10" rowspan="5">
+     <item row="7" column="8" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-PPS{PSh:10}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
+       <property name="toolTip">
+        <string>Opened</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:2}Pos-Sts</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="numBits" stdset="0">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
+       <property name="toolTip">
+        <string>Not Closed</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:2}Sw:ClsLim-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="10" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_14">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-VA:2{FS:6-GV:2}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-PPS{PSh:7}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{BT:1-GV:1}Pos-Sts</string>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="9" rowspan="5">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_18">
        <property name="toolTip">
         <string/>
@@ -562,34 +461,174 @@ Control</string>
        </property>
       </widget>
      </item>
-     <item row="4" column="7" rowspan="7">
+     <item row="5" column="2" rowspan="4" colspan="2">
+      <widget class="PyDMLabel" name="MainCCG">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-CCG:1}P:Raw-I</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="13" rowspan="2">
+      <widget class="PyDMLabel" name="PyDMLabel_8">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://INJ{TOC-SM}Cnt:Next-I</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="10" rowspan="2" colspan="3">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Next Inj:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6" rowspan="7">
       <widget class="QLabel" name="label_2">
        <property name="text">
         <string>mA</string>
        </property>
       </widget>
      </item>
-     <item row="7" column="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>10</height>
-        </size>
-       </property>
+     <item row="7" column="7" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
        <property name="toolTip">
-        <string>Opened</string>
+        <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:LL-GV:1}Pos-Sts</string>
+        <string>ca://XF:07IDB-VA:2{Mir:M3C-GV:1}Pos-Sts</string>
        </property>
        <property name="showLabels" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
      </item>
-     <item row="7" column="3">
+     <item row="7" column="12" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-PPS{PSh:4}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="11" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-VA:2{FS:6-GV:1}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="13" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_17">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07ID-PPS{Sh:FE}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="6" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:3{Slt:C-GV:1}Pos-Sts</string>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="minimumSize">
         <size>
          <width>0</width>
@@ -622,54 +661,36 @@ Control</string>
          <blue>0</blue>
         </color>
        </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
        <property name="showLabels" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
      </item>
-     <item row="9" column="2" rowspan="4" colspan="2">
-      <widget class="PyDMLabel" name="MainCCG">
+     <item row="3" column="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
        <property name="minimumSize">
         <size>
-         <width>110</width>
-         <height>0</height>
+         <width>0</width>
+         <height>10</height>
         </size>
        </property>
-       <property name="font">
-        <font>
-         <pointsize>16</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>10</height>
+        </size>
        </property>
        <property name="toolTip">
-        <string/>
-       </property>
-       <property name="showUnits" stdset="0">
-        <bool>true</bool>
+        <string>Opened</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:Main-CCG:1}P:Raw-I</string>
+        <string>ca://XF:07IDB-VA:2{RSoXS:LL-GV:1}Pos-Sts</string>
        </property>
-      </widget>
-     </item>
-     <item row="4" column="14" rowspan="2">
-      <widget class="PyDMLabel" name="PyDMLabel_8">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://INJ{TOC-SM}Cnt:Next-I</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="11" rowspan="2" colspan="3">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Next Inj:</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
        </property>
       </widget>
      </item>

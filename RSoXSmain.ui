@@ -389,7 +389,7 @@
             <string/>
            </property>
            <property name="text">
-            <string>WAXS GE</string>
+            <string>SAXS GE</string>
            </property>
            <property name="showIcon" stdset="0">
             <bool>false</bool>
@@ -411,7 +411,7 @@
             <string/>
            </property>
            <property name="text">
-            <string>SAXS GE</string>
+            <string>WAXS GE</string>
            </property>
            <property name="showIcon" stdset="0">
             <bool>false</bool>
