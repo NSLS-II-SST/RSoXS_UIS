@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>Form</class>
  <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +14,7 @@
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+   <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -21,6 +24,9 @@
     <width>854</width>
     <height>967</height>
    </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
   </property>
   <property name="acceptDrops">
    <bool>false</bool>
@@ -51,6 +57,9 @@
        <property name="toolTip">
         <string/>
        </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
        <property name="macros" stdset="0">
         <string/>
        </property>
@@ -75,6 +84,9 @@
 }
 </string>
        </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
        <property name="text">
         <string>Sample View</string>
        </property>
@@ -91,6 +103,9 @@
        <property name="toolTip">
         <string/>
        </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
        <property name="macros" stdset="0">
         <string>{&quot;CAM&quot;:&quot;XF:07ID1-ES:1{Scr:2}&quot;}</string>
        </property>
@@ -101,6 +116,12 @@
      </item>
      <item>
       <widget class="Line" name="line">
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -304,6 +325,9 @@
         font-size: 14px;
 }
 </string>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
        </property>
        <property name="text">
         <string>Other Cameras</string>
@@ -629,7 +653,7 @@
 </string>
          </property>
          <property name="text">
-          <string>Diagnostics</string>
+          <string>Current Diagnostics</string>
          </property>
         </widget>
        </item>
@@ -731,710 +755,756 @@
         </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2"/>
-       </item>
-       <item>
-        <layout class="QGridLayout" name="gridLayout_2">
-         <item row="2" column="2">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>false</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:1}cam1:Temperature</string>
-           </property>
-           <property name="displayFormat" stdset="0">
-            <enum>PyDMLineEdit::Decimal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="8">
-          <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_6">
-           <property name="minimumSize">
-            <size>
-             <width>80</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:1}cam1:GreatEyesAdcSpeed</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="4">
-          <widget class="PyDMLabel" name="PyDMLabel_9">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alarmSensitiveContent" stdset="0">
-            <bool>false</bool>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:1}cam1:TemperatureActual</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_13">
-           <property name="text">
-            <string>PGM:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="7">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-OP{Mono:PGM1-Ax::ENERGY_SP</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="3">
-          <widget class="PyDMLabel" name="PyDMLabel_7">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alarmSensitiveContent" stdset="0">
-            <bool>false</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:1}cam1:Temperature_RBV</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="label_10">
-           <property name="text">
-            <string>WAXS Detector:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="11">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-OP{Mono:PGM1-Ax::CFF_SP</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="8">
-          <widget class="QLabel" name="label_5">
-           <property name="text">
-            <string>CFF:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:2}cam1:Temperature</string>
-           </property>
-           <property name="displayFormat" stdset="0">
-            <enum>PyDMLineEdit::Decimal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="11">
-          <widget class="PyDMLabel" name="PyDMLabel_5">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Gap}-Mtr.RBV</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="7">
-          <widget class="QLabel" name="label_7">
-           <property name="text">
-            <string>Gap:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="8">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Gap}-Mtr-SP</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="6">
-          <widget class="QLabel" name="label_11">
-           <property name="text">
-            <string>Electronics Temp:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="5">
-          <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_3">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Phase}Phs:Mode-SP</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="5">
-          <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_5">
-           <property name="minimumSize">
-            <size>
-             <width>80</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:2}cam1:GreatEyesEnableCooling</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="4">
-          <widget class="PyDMLabel" name="PyDMLabel_10">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alarmSensitiveContent" stdset="0">
-            <bool>false</bool>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:2}cam1:TemperatureActual</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="6">
-          <widget class="QLabel" name="label_12">
-           <property name="text">
-            <string>Electronics Temp:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="11">
-          <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_7">
-           <property name="minimumSize">
-            <size>
-             <width>80</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:1}cam1:GreatEyesReadoutDir</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="3">
-          <widget class="PyDMLabel" name="PyDMLabel_8">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alarmSensitiveContent" stdset="0">
-            <bool>false</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:2}cam1:Temperature_RBV</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="8">
-          <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_8">
-           <property name="minimumSize">
-            <size>
-             <width>80</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:2}cam1:GreatEyesAdcSpeed</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="7">
-          <widget class="PyDMLabel" name="PyDMLabel_12">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alarmSensitiveContent" stdset="0">
-            <bool>false</bool>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:2}cam1:GreatEyesHotSideTemp</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="11">
-          <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_9">
-           <property name="minimumSize">
-            <size>
-             <width>80</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:2}cam1:GreatEyesReadoutDir</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_6">
-           <property name="text">
-            <string>EPU60:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="5">
-          <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_4">
-           <property name="minimumSize">
-            <size>
-             <width>80</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:1}cam1:GreatEyesEnableCooling</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="6">
-          <widget class="PyDMLabel" name="PyDMLabel_6">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Phase}Phs:Mode-RB</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_9">
-           <property name="text">
-            <string>SAXS Detector:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="7">
-          <widget class="PyDMLabel" name="PyDMLabel_11">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alarmSensitiveContent" stdset="0">
-            <bool>false</bool>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-ES:1{GE:1}cam1:GreatEyesHotSideTemp</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="6">
-          <widget class="PyDMLabel" name="PyDMLabel">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-OP{Mono:PGM1-Ax::ENERGY_MON</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="5">
-          <widget class="PyDMLabel" name="PyDMLabel_3">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-OP{Mono:PGM1-Ax::VLS_B2.A</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="4">
-          <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="sizeAdjustPolicy">
-            <enum>QComboBox::AdjustToContents</enum>
-           </property>
-           <property name="minimumContentsLength">
-            <number>12</number>
-           </property>
-           <property name="alarmSensitiveContent" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-OP{Mono:PGM1-Ax:MirX}Mtr_TYPE_MON</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="3">
-          <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="sizeAdjustPolicy">
-            <enum>QComboBox::AdjustToContents</enum>
-           </property>
-           <property name="minimumContentsLength">
-            <number>12</number>
-           </property>
-           <property name="showUnits" stdset="0">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-OP{Mono:PGM1-Ax:GrtX}Mtr_TYPE_MON</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="PyDMLabel" name="PyDMLabel_2">
-           <property name="minimumSize">
-            <size>
-             <width>50</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-OP{Mono:PGM1-Ax::ERDY_STS</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="4">
-          <widget class="PyDMLabel" name="PyDMLabel_4">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Phase}-Mtr.RBV</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Phase}-Mtr-SP</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="2">
-          <widget class="QLabel" name="label_14">
-           <property name="text">
-            <string> Phase:</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="styleSheet">
-          <string notr="true">QLabel {
-        qproperty-alignment: AlignCenter;
-	border: 1px solid #FF17365D;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	background-color: #FF17365D;
-	padding: 5px 0px;
-	color: rgb(255, 255, 255);
-	max-height: 25px;
-        font-size: 14px;
-}
-</string>
+        <widget class="QScrollArea" name="scrollArea_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>120</height>
+          </size>
          </property>
-         <property name="text">
-          <string>Sample Controls</string>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>120</height>
+          </size>
          </property>
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>-71</y>
+            <width>813</width>
+            <height>220</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="horizontalSpacing">
+              <number>2</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>10</number>
+             </property>
+             <item row="1" column="2" colspan="10">
+              <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="macros" stdset="0">
+                <string>{&quot;MIR&quot;:&quot;XF:07ID1-OP{Mir:M3ABC-Ax:&quot;}</string>
+               </property>
+               <property name="filename" stdset="0">
+                <string>mirror.ui</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_17">
+               <property name="font">
+                <font>
+                 <family>Garamond</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Mirror 1:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
+              <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:1}cam1:Temperature</string>
+               </property>
+               <property name="displayFormat" stdset="0">
+                <enum>PyDMLineEdit::Decimal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="5">
+              <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_5">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:2}cam1:GreatEyesEnableCooling</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="5">
+              <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_4">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="mouseTracking">
+                <bool>false</bool>
+               </property>
+               <property name="tabletTracking">
+                <bool>true</bool>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:1}cam1:GreatEyesEnableCooling</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="11">
+              <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_9">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:2}cam1:GreatEyesReadoutDir</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="7">
+              <widget class="PyDMLabel" name="PyDMLabel_11">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="alarmSensitiveContent" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:1}cam1:GreatEyesHotSideTemp</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="label_10">
+               <property name="font">
+                <font>
+                 <family>Garamond</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>WAXS Detector:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="11">
+              <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_7">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:1}cam1:GreatEyesReadoutDir</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_9">
+               <property name="font">
+                <font>
+                 <family>Garamond</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>SAXS Detector:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="7">
+              <widget class="PyDMLineEdit" name="PyDMLineEdit">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-OP{Mono:PGM1-Ax::ENERGY_SP</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="5">
+              <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_3">
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Phase}Phs:Mode-SP</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="8">
+              <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_6">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:1}cam1:GreatEyesAdcSpeed</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="6">
+              <widget class="PyDMLabel" name="PyDMLabel_6">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Phase}Phs:Mode-RB</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="6">
+              <widget class="PyDMLabel" name="PyDMLabel">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-OP{Mono:PGM1-Ax::ENERGY_MON</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="5">
+              <widget class="PyDMLabel" name="PyDMLabel_3">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-OP{Mono:PGM1-Ax::VLS_B2.A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="11">
+              <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-OP{Mono:PGM1-Ax::CFF_SP</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="7">
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>Gap:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="8">
+              <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_8">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:2}cam1:GreatEyesAdcSpeed</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="11">
+              <widget class="PyDMLabel" name="PyDMLabel_5">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Gap}-Mtr.RBV</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="4">
+              <widget class="PyDMLabel" name="PyDMLabel_9">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="alarmSensitiveContent" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:1}cam1:TemperatureActual</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="6">
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>Electronics Temp:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="8">
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>CFF:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="font">
+                <font>
+                 <family>Garamond</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <italic>false</italic>
+                 <bold>true</bold>
+                 <underline>false</underline>
+                 <stylestrategy>PreferAntialias</stylestrategy>
+                 <kerning>false</kerning>
+                </font>
+               </property>
+               <property name="text">
+                <string>PGM:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="8">
+              <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Gap}-Mtr-SP</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="6">
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>Electronics Temp:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="3">
+              <widget class="PyDMLabel" name="PyDMLabel_8">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="alarmSensitiveContent" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:2}cam1:Temperature_RBV</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="3">
+              <widget class="PyDMLabel" name="PyDMLabel_7">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="alarmSensitiveContent" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:1}cam1:Temperature_RBV</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="4">
+              <widget class="PyDMLabel" name="PyDMLabel_10">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="alarmSensitiveContent" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:2}cam1:TemperatureActual</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="7">
+              <widget class="PyDMLabel" name="PyDMLabel_12">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="alarmSensitiveContent" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:2}cam1:GreatEyesHotSideTemp</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="font">
+                <font>
+                 <family>Garamond</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>EPU60:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="2">
+              <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-ES:1{GE:2}cam1:Temperature</string>
+               </property>
+               <property name="displayFormat" stdset="0">
+                <enum>PyDMLineEdit::Decimal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="4">
+              <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QComboBox::AdjustToContents</enum>
+               </property>
+               <property name="minimumContentsLength">
+                <number>12</number>
+               </property>
+               <property name="alarmSensitiveContent" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-OP{Mono:PGM1-Ax:MirX}Mtr_TYPE_MON</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string> Phase:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3">
+              <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QComboBox::AdjustToContents</enum>
+               </property>
+               <property name="minimumContentsLength">
+                <number>12</number>
+               </property>
+               <property name="showUnits" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-OP{Mono:PGM1-Ax:GrtX}Mtr_TYPE_MON</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="PyDMLabel" name="PyDMLabel_2">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://XF:07ID1-OP{Mono:PGM1-Ax::ERDY_STS</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="4">
+              <widget class="PyDMLabel" name="PyDMLabel_4">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Phase}-Mtr.RBV</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>ca://SR:C07-ID:G1A{SST1:1-Ax:Phase}-Mtr-SP</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_15">
+               <property name="font">
+                <font>
+                 <family>Garamond</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Mirror 3:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" colspan="10">
+              <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="macros" stdset="0">
+                <string>{&quot;MIR&quot;:&quot;XF:07IDA-OP{Mir:M1-Ax:&quot;}</string>
+               </property>
+               <property name="filename" stdset="0">
+                <string>mirror.ui</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_18">
+               <property name="font">
+                <font>
+                 <family>Garamond</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Mirror 4:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2" colspan="10">
+              <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="macros" stdset="0">
+                <string>{&quot;MIR&quot;:&quot;XF:07ID2-OP{Mir:M4CD-Ax:&quot;}</string>
+               </property>
+               <property name="filename" stdset="0">
+                <string>mirror.ui</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
        <item>
-        <widget class="QFrame" name="frame">
-         <property name="styleSheet">
-          <string notr="true">QFrame#frame{
-	border: 1px solid #FF17365D;
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
-}</string>
+        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
          </property>
          <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
+          <enum>QFrame::NoFrame</enum>
          </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
+         <property name="lineWidth">
+          <number>0</number>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_6">
-          <property name="spacing">
-           <number>0</number>
-          </property>
-          <property name="leftMargin">
-           <number>0</number>
-          </property>
-          <property name="topMargin">
-           <number>0</number>
-          </property>
-          <property name="rightMargin">
-           <number>0</number>
-          </property>
-          <property name="bottomMargin">
-           <number>0</number>
-          </property>
-          <item>
-           <widget class="PyDMEmbeddedDisplay" name="Xdisp">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>700</width>
-              <height>42</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>42</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="whatsThis">
-             <string>
-    A QFrame capable of rendering a PyDM Display
-
-    Parameters
-    ----------
-    parent : QWidget
-        The parent widget for the Label
-
-    </string>
-            </property>
-            <property name="macros" stdset="0">
-             <string>{&quot;MOTOR&quot;:&quot;XF:07ID2-ES1{Stg-Ax:X}Mtr&quot;}</string>
-            </property>
-            <property name="filename" stdset="0">
-             <string>inline_motor.py</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="PyDMEmbeddedDisplay" name="Ydisp">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>700</width>
-              <height>42</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>42</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="whatsThis">
-             <string>
-    A QFrame capable of rendering a PyDM Display
-
-    Parameters
-    ----------
-    parent : QWidget
-        The parent widget for the Label
-
-    </string>
-            </property>
-            <property name="macros" stdset="0">
-             <string>{&quot;MOTOR&quot;:&quot;XF:07ID2-ES1{Stg-Ax:Y}Mtr&quot;}</string>
-            </property>
-            <property name="filename" stdset="0">
-             <string>inline_motor.py</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="PyDMEmbeddedDisplay" name="Zdisp">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>700</width>
-              <height>42</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>42</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="whatsThis">
-             <string>
-    A QFrame capable of rendering a PyDM Display
-
-    Parameters
-    ----------
-    parent : QWidget
-        The parent widget for the Label
-
-    </string>
-            </property>
-            <property name="macros" stdset="0">
-             <string>{&quot;MOTOR&quot;:&quot;XF:07ID2-ES1{Stg-Ax:Z}Mtr&quot;}</string>
-            </property>
-            <property name="filename" stdset="0">
-             <string>inline_motor.py</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>700</width>
-              <height>42</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>42</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="macros" stdset="0">
-             <string>{&quot;MOTOR&quot;:&quot;XF:07ID2-ES1{Stg-Ax:Yaw}Mtr&quot;}</string>
-            </property>
-            <property name="filename" stdset="0">
-             <string>inline_motor.py</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <property name="filename" stdset="0">
+          <string>all_motors.py</string>
+         </property>
         </widget>
        </item>
       </layout>
      </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>Pop out Motor Control</string>
+         </property>
+         <property name="displayFilename" stdset="0">
+          <string>all_motors.py</string>
+         </property>
+         <property name="openInNewWindow" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
     </layout>
-   </item>
-   <item>
-    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="whatsThis">
-      <string>
-    A QPushButton capable of opening a new Display at the same of at a
-    new window.
-
-    Parameters
-    ----------
-    init_channel : str, optional
-        The channel to be used by the widget.
-
-    filename : str, optional
-        The file to be opened
-    </string>
-     </property>
-     <property name="text">
-      <string>View All Motors</string>
-     </property>
-     <property name="displayFilename" stdset="0">
-      <string>all_motors.py</string>
-     </property>
-     <property name="openInNewWindow" stdset="0">
-      <bool>true</bool>
-     </property>
-    </widget>
    </item>
   </layout>
  </widget>

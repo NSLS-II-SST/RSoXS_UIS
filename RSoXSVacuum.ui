@@ -49,7 +49,46 @@
      <property name="bottomMargin">
       <number>6</number>
      </property>
-     <item row="8" column="7" rowspan="3">
+     <item row="11" column="0">
+      <widget class="PyDMPushButton" name="PyDMPushButton_9">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>CLOSE</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-PPS{PSh:7}Cmd:Cls-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RSoXS Sample
+Chamber</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="8" rowspan="3">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
        <property name="toolTip">
         <string/>
@@ -62,7 +101,42 @@
        </property>
       </widget>
      </item>
-     <item row="10" column="5">
+     <item row="8" column="4" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:1}Pos-Sts</string>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="9">
+      <widget class="PyDMPushButton" name="PyDMPushButton_12">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>CLOSE</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-PPS{PSh:10}Cmd:Cls-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="6">
       <widget class="PyDMLabel" name="PyDMLabel_4">
        <property name="font">
         <font>
@@ -92,63 +166,6 @@
        </property>
       </widget>
      </item>
-     <item row="11" column="8">
-      <widget class="PyDMPushButton" name="PyDMPushButton_12">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>CLOSE</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:10}Cmd:Cls-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="4" rowspan="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:1}Pos-Sts</string>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="0">
-      <widget class="PyDMPushButton" name="PyDMPushButton_9">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>CLOSE</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:7}Cmd:Cls-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
      <item row="7" column="0">
       <widget class="PyDMPushButton" name="PyDMPushButton_10">
        <property name="minimumSize">
@@ -171,30 +188,197 @@
        </property>
       </widget>
      </item>
-     <item row="9" column="2" colspan="2">
-      <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>RSoXS Sample
-Chamber</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="6" rowspan="3">
+     <item row="8" column="7" rowspan="3">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
        <property name="toolTip">
         <string/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://XF:07IDB-VA:3{Slt:C-GV:1}Pos-Sts</string>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2" colspan="2">
+      <widget class="PyDMLabel" name="MainPG">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="indent">
+        <number>-14</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-TCG:1}P:Raw-I</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
+       <property name="toolTip">
+        <string>Opened</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:2}Pos-Sts</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="numBits" stdset="0">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="14">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>PSH1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="12">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>GV14</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="PyDMPushButton" name="PyDMPushButton_7">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>OPEN</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:1}Cmd:Opn-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>GV 27A</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="9">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>PSH10</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="12">
+      <widget class="PyDMPushButton" name="PyDMPushButton_19">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>CLOSE</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-VA:2{FS:6-GV:1}Cmd:Cls-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="8">
+      <widget class="PyDMPushButton" name="PyDMPushButton_5">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>OPEN</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{Mir:M3C-GV:1}Cmd:Opn-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:DM-TCG:1}P:Raw-I</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
+       <property name="toolTip">
+        <string>Not Closed</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:2}Sw:ClsLim-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
        </property>
        <property name="showLabels" stdset="0">
         <bool>false</bool>
@@ -217,6 +401,68 @@ Chamber</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:1}Cmd:Cls-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+       <property name="toolTip">
+        <string>Opened</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:LL-GV:1}Pos-Sts</string>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
+       <property name="toolTip">
+        <string>Not Closed</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:LL-GV:1}Sw:ClsLim-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="14">
+      <widget class="PyDMPushButton" name="PyDMPushButton_22">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>OPEN</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07ID-PPS{Sh:FE}Cmd:Opn-Cmd</string>
        </property>
        <property name="pressValue" stdset="0">
         <string>1</string>
@@ -249,7 +495,7 @@ Chamber</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="6">
+     <item row="11" column="7">
       <widget class="PyDMPushButton" name="PyDMPushButton_3">
        <property name="minimumSize">
         <size>
@@ -271,26 +517,94 @@ Chamber</string>
        </property>
       </widget>
      </item>
-     <item row="7" column="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+     <item row="11" column="1">
+      <widget class="PyDMPushButton" name="PyDMPushButton">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="toolTip">
-        <string>Opened</string>
+        <string/>
+       </property>
+       <property name="text">
+        <string>CLOSE</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:LL-GV:1}Pos-Sts</string>
+        <string>ca://XF:07IDB-VA:2{BT:1-GV:1}Cmd:Cls-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="9" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-PPS{PSh:10}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
        </property>
        <property name="showLabels" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
      </item>
-     <item row="7" column="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
+     <item row="7" column="9">
+      <widget class="PyDMPushButton" name="PyDMPushButton_11">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="toolTip">
-        <string>Not Closed</string>
+        <string/>
+       </property>
+       <property name="text">
+        <string>OPEN</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:LL-GV:1}Sw:ClsLim-Sts</string>
+        <string>ca://XF:07IDA-PPS{PSh:10}Cmd:Opn-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="11">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>GV14A</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="14" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_17">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07ID-PPS{Sh:FE}Pos-Sts</string>
        </property>
        <property name="onColor" stdset="0">
         <color>
@@ -338,533 +652,7 @@ Chamber</string>
        </property>
       </widget>
      </item>
-     <item row="8" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_3">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:DM-TCG:1}P:Raw-I</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="8">
-      <widget class="PyDMPushButton" name="PyDMPushButton_11">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>OPEN</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:10}Cmd:Opn-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="8">
-      <widget class="QLabel" name="label_9">
-       <property name="text">
-        <string>PSH10</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="7">
-      <widget class="PyDMPushButton" name="PyDMPushButton_5">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>OPEN</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{Mir:M3C-GV:1}Cmd:Opn-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="13">
-      <widget class="PyDMPushButton" name="PyDMPushButton_22">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>OPEN</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07ID-PPS{Sh:FE}Cmd:Opn-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
-       <property name="toolTip">
-        <string>Not Closed</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:2}Sw:ClsLim-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="1">
-      <widget class="PyDMPushButton" name="PyDMPushButton">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>CLOSE</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{BT:1-GV:1}Cmd:Cls-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="8" rowspan="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:10}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="13" rowspan="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_17">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07ID-PPS{Sh:FE}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="10">
-      <widget class="QLabel" name="label_11">
-       <property name="text">
-        <string>GV14A</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="13">
-      <widget class="QLabel" name="label_14">
-       <property name="text">
-        <string>PSH1</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="2" colspan="2">
-      <widget class="PyDMLabel" name="MainPG">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="indent">
-        <number>-14</number>
-       </property>
-       <property name="showUnits" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:Main-TCG:1}P:Raw-I</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="11">
-      <widget class="PyDMPushButton" name="PyDMPushButton_19">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>CLOSE</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-VA:2{FS:6-GV:1}Cmd:Cls-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="2">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
-       <property name="toolTip">
-        <string>Opened</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:2}Pos-Sts</string>
-       </property>
-       <property name="orientation" stdset="0">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="numBits" stdset="0">
-        <number>1</number>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="11">
-      <widget class="QLabel" name="label_12">
-       <property name="text">
-        <string>GV14</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="4">
-      <widget class="PyDMPushButton" name="PyDMPushButton_7">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>OPEN</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:Main-GV:1}Cmd:Opn-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="4">
-      <widget class="QLabel" name="label_7">
-       <property name="text">
-        <string>GV 27A</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="12">
-      <widget class="QLabel" name="label_13">
-       <property name="text">
-        <string>PSH4</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="12" rowspan="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:4}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="0" rowspan="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:7}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="10" rowspan="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_14">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-VA:2{FS:6-GV:2}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="2" rowspan="2" colspan="2">
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::NoFrame</enum>
-       </property>
-       <property name="text">
-        <string>Load Lock</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="7">
-      <widget class="QLabel" name="label_5">
-       <property name="text">
-        <string>GV 26</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string>GV 28</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1" rowspan="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{BT:1-GV:1}Pos-Sts</string>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="label_8">
-       <property name="text">
-        <string>PSH7</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="11" rowspan="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-VA:2{FS:6-GV:1}Pos-Sts</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="9">
-      <widget class="QLabel" name="label_10">
-       <property name="text">
-        <string>GV15</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="12">
-      <widget class="PyDMPushButton" name="PyDMPushButton_16">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>OPEN</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:4}Cmd:Opn-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="13">
+     <item row="11" column="14">
       <widget class="PyDMPushButton" name="PyDMPushButton_21">
        <property name="enabled">
         <bool>true</bool>
@@ -895,7 +683,248 @@ Chamber</string>
        </property>
       </widget>
      </item>
+     <item row="4" column="2" colspan="2">
+      <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:LL-TCG:1}P:Raw-I</string>
+       </property>
+      </widget>
+     </item>
      <item row="7" column="10">
+      <widget class="PyDMPushButton" name="PyDMPushButton_13">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>OPEN</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{Mono:PGM-GV:1}Cmd:Opn-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="13">
+      <widget class="PyDMPushButton" name="PyDMPushButton_20">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>CLOSE</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-PPS{PSh:4}Cmd:Cls-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_5">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2" rowspan="2" colspan="2">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>Load Lock</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2" colspan="2">
+      <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:LL-CCG:1}P:Raw-I</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="10">
+      <widget class="PyDMPushButton" name="PyDMPushButton_17">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>CLOSE</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{Mono:PGM-GV:1}Cmd:Cls-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="12" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-VA:2{FS:6-GV:1}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="13">
+      <widget class="PyDMPushButton" name="PyDMPushButton_16">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>OPEN</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-PPS{PSh:4}Cmd:Opn-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="6">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Diagnostic
+Module</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="13" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-PPS{PSh:4}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>PSH7</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="8">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>GV 26</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="11">
       <widget class="PyDMPushButton" name="PyDMPushButton_14">
        <property name="minimumSize">
         <size>
@@ -917,7 +946,7 @@ Chamber</string>
        </property>
       </widget>
      </item>
-     <item row="8" column="9" rowspan="3">
+     <item row="8" column="10" rowspan="3">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_13">
        <property name="toolTip">
         <string/>
@@ -966,46 +995,7 @@ Chamber</string>
        </property>
       </widget>
      </item>
-     <item row="9" column="5">
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Diagnostic
-Module</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="6">
-      <widget class="PyDMPushButton" name="PyDMPushButton_6">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>OPEN</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:3{Slt:C-GV:1}Cmd:Opn-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="7">
+     <item row="11" column="8">
       <widget class="PyDMPushButton" name="PyDMPushButton_4">
        <property name="minimumSize">
         <size>
@@ -1027,7 +1017,89 @@ Module</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="10">
+     <item row="8" column="11" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_14">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDA-VA:2{FS:6-GV:2}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{BT:1-GV:1}Pos-Sts</string>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>GV 28</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="10">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>GV15</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="7">
+      <widget class="PyDMPushButton" name="PyDMPushButton_6">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>OPEN</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:3{Slt:C-GV:1}Cmd:Opn-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="11">
       <widget class="PyDMPushButton" name="PyDMPushButton_18">
        <property name="minimumSize">
         <size>
@@ -1049,116 +1121,44 @@ Module</string>
        </property>
       </widget>
      </item>
-     <item row="4" column="2" colspan="2">
-      <widget class="PyDMLabel" name="PyDMLabel_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:LL-TCG:1}P:Raw-I</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="2" colspan="2">
-      <widget class="PyDMLabel" name="PyDMLabel">
-       <property name="font">
-        <font>
-         <pointsize>16</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
+     <item row="8" column="0" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
        <property name="toolTip">
         <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{RSoXS:LL-CCG:1}P:Raw-I</string>
+        <string>ca://XF:07IDA-PPS{PSh:7}Pos-Sts</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
-     <item row="7" column="9">
-      <widget class="PyDMPushButton" name="PyDMPushButton_13">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
+     <item row="6" column="13">
+      <widget class="QLabel" name="label_13">
        <property name="text">
-        <string>OPEN</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{Mono:PGM-GV:1}Cmd:Opn-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="12">
-      <widget class="PyDMPushButton" name="PyDMPushButton_20">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>CLOSE</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDA-PPS{PSh:4}Cmd:Cls-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_5">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string/>
+        <string>PSH4</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="11" column="9">
-      <widget class="PyDMPushButton" name="PyDMPushButton_17">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>CLOSE</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-VA:2{Mono:PGM-GV:1}Cmd:Cls-Cmd</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="6">
+     <item row="6" column="7">
       <widget class="QLabel" name="label_4">
        <property name="text">
         <string>GV 27</string>
@@ -1168,7 +1168,7 @@ Module</string>
        </property>
       </widget>
      </item>
-     <item row="7" column="11">
+     <item row="7" column="12">
       <widget class="PyDMPushButton" name="PyDMPushButton_15">
        <property name="minimumSize">
         <size>
@@ -1190,7 +1190,7 @@ Module</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="4" rowspan="5" colspan="10">
+     <item row="0" column="4" rowspan="5" colspan="11">
       <widget class="PyDMTimePlot" name="PyDMTimePlot">
        <property name="minimumSize">
         <size>
@@ -1244,7 +1244,7 @@ Module</string>
         </stringlist>
        </property>
        <property name="bufferSize">
-        <number>3600000</number>
+        <number>3600</number>
        </property>
        <property name="updatesAsynchronously">
         <bool>true</bool>
@@ -1276,6 +1276,61 @@ Module</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://XF:07IDB-VA:2{RSoXS:LL-CCG:1}Pwr-Cmd</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>Fast Shutter</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="5" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_18">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07ID1-ES:1{GE:1}cam1:ShutterStatus_RBV</string>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="circles" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="5">
+      <widget class="PyDMPushButton" name="PyDMPushButton_23">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>OPEN</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07ID1-ES:1{GE:1}cam1:ShutterControl</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="5">
+      <widget class="PyDMPushButton" name="PyDMPushButton_24">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>CLOSE</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07ID1-ES:1{GE:1}cam1:ShutterControl</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>0</string>
        </property>
       </widget>
      </item>

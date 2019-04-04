@@ -25,7 +25,7 @@ class AllMotorsDisplay(Display):
     def minimumSizeHint(self):
         # This is the default recommended size
         # for this screen
-        return QtCore.QSize(750, 120)
+        return QtCore.QSize(750, 100)
 
     def ui_filepath(self):
         # No UI file is being used
@@ -34,6 +34,9 @@ class AllMotorsDisplay(Display):
     def setup_ui(self):
         # Create the main layout
         main_layout = QVBoxLayout()
+        main_layout.setContentsMargins(0, 0, 0, 0)
+        #main_layout.setMargin(0)
+        #main_layout.setSpacing(0)
         self.setLayout(main_layout)
 
         # Create a Label to be the title
@@ -57,10 +60,16 @@ class AllMotorsDisplay(Display):
         
         # Create the Search Panel layout
         search_layout = QHBoxLayout()
+        search_layout.setContentsMargins(0, 0, 0, 0)
+        #search_layout.setMargin(0)
+        #search_layout.setSpacing(0)
         
         # Create a GroupBox with "Filtering" as Title
-        gb_search = QGroupBox(parent=self)
-        gb_search.setTitle("Filtering")        
+        #gb_search = QGroupBox(parent=self)
+        #gb_search.setTitle("Filtering")        
+        #gb_search.setLayout(search_layout)
+        
+        gb_search = QWidget()
         gb_search.setLayout(search_layout)
         
         # Create a label, line edit and button for filtering
@@ -82,6 +91,8 @@ class AllMotorsDisplay(Display):
         # Create the Results Layout
         self.results_layout = QVBoxLayout()
         self.results_layout.setContentsMargins(0, 0, 0, 0)
+        #self.results_layout.setMargin(0)
+        #self.results_layout.setSpacing(0)
 
         # Create a Frame to host the results of search
         self.frm_result = QFrame(parent=self)       
@@ -131,7 +142,7 @@ class AllMotorsDisplay(Display):
             disp.macros = json.dumps({"MOTOR":entry})
             disp.filename = 'inline_motor.py'
             disp.setMinimumWidth(700)
-            disp.setMinimumHeight(40)
+            disp.setMinimumHeight(30)
             disp.setMaximumHeight(100)
             # Add the Embedded Display to the Results Layout
             self.results_layout.addWidget(disp)
