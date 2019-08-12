@@ -451,6 +451,35 @@
            </property>
           </widget>
          </item>
+         <item>
+          <widget class="PyDMCheckbox" name="PyDMCheckbox">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">PyDMCheckbox { background-color: white }
+PyDMCheckbox:checked { background-color: yellow }</string>
+           </property>
+           <property name="text">
+            <string>Light In Chamber</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://XF:07ID-CT{RG:C1-PDU:1}Sw:8-Sel</string>
+           </property>
+          </widget>
+         </item>
         </layout>
        </item>
        <item>
@@ -707,24 +736,21 @@
           </widget>
          </item>
          <item>
-          <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_7">
+          <widget class="PyDMRelatedDisplayButton" name="popupDownstreamCurrents">
            <property name="toolTip">
             <string/>
            </property>
            <property name="text">
             <string>Downstream Diagnostics</string>
            </property>
-           <property name="rules" stdset="0">
-            <string>[]</string>
-           </property>
            <property name="showIcon" stdset="0">
             <bool>false</bool>
            </property>
            <property name="displayFilename" stdset="0">
-            <string>camera.ui</string>
+            <string>i400.py</string>
            </property>
            <property name="macros" stdset="0">
-            <string>{&quot;CAM&quot;:&quot;XF:07ID-BI{BPM:13}&quot;}</string>
+            <string>{&quot;I400&quot;:&quot;XF:07ID-BI{DM7:I400-1}&quot; , &quot;Title&quot; : &quot;RSoXS Downstream Diagnostics&quot; , &quot;Ch1&quot; : &quot;Channel1&quot; , &quot;Ch2&quot; : &quot;Channel2&quot;, &quot;Ch3&quot; : &quot;Channel3&quot;, &quot;Ch4&quot; : &quot;DM7_Diode&quot;}</string>
            </property>
            <property name="openInNewWindow" stdset="0">
             <bool>true</bool>
@@ -787,9 +813,9 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-71</y>
+            <y>0</y>
             <width>813</width>
-            <height>220</height>
+            <height>214</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -845,9 +871,6 @@
                </property>
                <property name="channel" stdset="0">
                 <string>ca://XF:07ID1-ES:1{GE:1}cam1:Temperature</string>
-               </property>
-               <property name="displayFormat" stdset="0">
-                <enum>PyDMLineEdit::Decimal</enum>
                </property>
               </widget>
              </item>
@@ -1259,9 +1282,6 @@
                <property name="channel" stdset="0">
                 <string>ca://XF:07ID1-ES:1{GE:2}cam1:Temperature</string>
                </property>
-               <property name="displayFormat" stdset="0">
-                <enum>PyDMLineEdit::Decimal</enum>
-               </property>
               </widget>
              </item>
              <item row="3" column="4">
@@ -1515,9 +1535,15 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
+   <class>PyDMCheckbox</class>
+   <extends>QCheckBox</extends>
+   <header>pydm.widgets.checkbox</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>PyDMEnumComboBox</class>

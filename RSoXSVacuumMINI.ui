@@ -56,19 +56,19 @@
    <item>
     <layout class="QGridLayout" name="gridLayout">
      <property name="leftMargin">
-      <number>1</number>
+      <number>0</number>
      </property>
      <property name="topMargin">
-      <number>1</number>
+      <number>0</number>
      </property>
      <property name="rightMargin">
-      <number>1</number>
+      <number>0</number>
      </property>
      <property name="bottomMargin">
-      <number>1</number>
+      <number>0</number>
      </property>
      <property name="spacing">
-      <number>1</number>
+      <number>0</number>
      </property>
      <item row="7" column="12" rowspan="2">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
@@ -557,6 +557,9 @@
      </item>
      <item row="7" column="0" rowspan="2">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
+       <property name="contextMenuPolicy">
+        <enum>Qt::DefaultContextMenu</enum>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -589,6 +592,20 @@
        </property>
        <property name="channel" stdset="0">
         <string>ca://INJ{TOC}OpControl-Sel</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>7</red>
+         <green>19</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>240</red>
+         <green>240</green>
+         <blue>240</blue>
+        </color>
        </property>
        <property name="numBits" stdset="0">
         <number>2</number>
