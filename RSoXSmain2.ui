@@ -107,7 +107,7 @@
         <number>0</number>
        </property>
        <property name="macros" stdset="0">
-        <string>{&quot;CAM&quot;:&quot;XF:07ID1-ES:1{Scr:2}&quot;}</string>
+        <string>{&quot;CAM&quot;:&quot;XF:07ID1-ES:1{Scr:4}&quot;}</string>
        </property>
        <property name="filename" stdset="0">
         <string>camera.ui</string>
@@ -413,7 +413,7 @@
             <string/>
            </property>
            <property name="text">
-            <string>WAXS</string>
+            <string>Side View</string>
            </property>
            <property name="showIcon" stdset="0">
             <bool>false</bool>
@@ -422,7 +422,7 @@
             <string>camera.ui</string>
            </property>
            <property name="macros" stdset="0">
-            <string>{&quot;CAM&quot;:&quot;XF:07ID1-ES:1{Scr:4}&quot;}</string>
+            <string>{&quot;CAM&quot;:&quot;XF:07ID1-ES:1{Scr:2}&quot;}</string>
            </property>
            <property name="openInNewWindow" stdset="0">
             <bool>true</bool>
