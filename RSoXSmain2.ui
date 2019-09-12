@@ -739,7 +739,7 @@ PyDMCheckbox:checked { background-color: yellow }</string>
             <string/>
            </property>
            <property name="text">
-            <string>Slit Currents</string>
+            <string>Drain Currents</string>
            </property>
            <property name="rules" stdset="0">
             <string>[]</string>
@@ -764,7 +764,7 @@ PyDMCheckbox:checked { background-color: yellow }</string>
             <string/>
            </property>
            <property name="text">
-            <string>Beamstops and IZero</string>
+            <string>Diode Currents</string>
            </property>
            <property name="showIcon" stdset="0">
             <bool>false</bool>
