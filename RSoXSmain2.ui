@@ -751,7 +751,7 @@ PyDMCheckbox:checked { background-color: yellow }</string>
             <string>i400.py</string>
            </property>
            <property name="macros" stdset="0">
-            <string>{&quot;I400&quot; : &quot;XF:07ID-ES1{Slt1:I400-1}&quot; , &quot;Title&quot;: &quot;RSoXS Slit Currents&quot; , &quot;Ch1&quot; : &quot;Outboard&quot;, &quot;Ch2&quot; : &quot;Bottom&quot;, &quot;Ch3&quot; : &quot;Top&quot;, &quot;Ch4&quot; : &quot;Izero Mesh&quot;}</string>
+            <string>{&quot;I400&quot; : &quot;XF:07ID-ES1{Slt1:I400-1}&quot; , &quot;Title&quot;: &quot;RSoXS Slit Currents&quot; , &quot;Ch1&quot; : &quot;Outboard&quot;, &quot;Ch2&quot; : &quot;Bottom&quot;, &quot;Ch3&quot; : &quot;Top&quot;, &quot;Ch4&quot; : &quot;Izero Mesh&quot;;}</string>
            </property>
            <property name="openInNewWindow" stdset="0">
             <bool>true</bool>
@@ -768,6 +768,7 @@ PyDMCheckbox:checked { background-color: yellow }</string>
            </property>
            <property name="rules" stdset="0">
             <string>[]</string>
+           </property>
            <property name="showIcon" stdset="0">
             <bool>false</bool>
            </property>
@@ -775,7 +776,7 @@ PyDMCheckbox:checked { background-color: yellow }</string>
             <string>i400.py</string>
            </property>
            <property name="macros" stdset="0">
-            <string>{&quot;I400&quot;:&quot;XF:07ID-ES1{DMR:I400-1}&quot; , &quot;Title&quot; : &quot;RSoXS Diagnostics&quot; , &quot;Ch1&quot; : &quot;Beamstop 1 (w)&quot; , &quot;Ch2&quot; : &quot;Beamstop 2 (s)&quot;, &quot;Ch3&quot; : &quot;None&quot;;, &quot;Ch4&quot; : &quot;Izero Diode&quot;}</string>
+            <string>{&quot;I400&quot;:&quot;XF:07ID-ES1{DMR:I400-1}&quot; , &quot;Title&quot; : &quot;RSoXS Diagnostics&quot; , &quot;Ch1&quot; : &quot;Beamstop 1 (w)&quot; , &quot;Ch2&quot; : &quot;Beamstop 2 (s)&quot;, &quot;Ch3&quot; : &quot;None&quot;, &quot;Ch4&quot; : &quot;Izero Diode&quot;;}</string>
            </property>
            <property name="openInNewWindow" stdset="0">
             <bool>true</bool>
