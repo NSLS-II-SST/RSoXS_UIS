@@ -773,7 +773,7 @@ PyDMCheckbox:checked { background-color: yellow }</string>
             <string>i400.py</string>
            </property>
            <property name="macros" stdset="0">
-            <string>{&quot;I400&quot;:&quot;XF:07ID-ES1{DMR:I400-1}&quot; , &quot;Title&quot; : &quot;RSoXS Diagnostics&quot; , &quot;Ch1&quot; : &quot;Beamstop 1 (waxs)&quot; , &quot;Ch2&quot; : &quot;Beamstop 2 (saxs)&quot;, &quot;Ch3&quot; : "none";, &quot;Ch4&quot; : &quot;Izero Diode&quot;}</string>
+            <string>{&quot;I400&quot;:&quot;XF:07ID-ES1{DMR:I400-1}&quot; , &quot;Title&quot; : &quot;RSoXS Diagnostics&quot; , &quot;Ch1&quot; : &quot;Beamstop 1 (waxs)&quot; , &quot;Ch2&quot; : &quot;Beamstop 2 (saxs)&quot;, &quot;Ch3&quot; : &quot;None&quot;;, &quot;Ch4&quot; : &quot;Izero Diode&quot;}</string>
            </property>
            <property name="openInNewWindow" stdset="0">
             <bool>true</bool>
@@ -795,7 +795,7 @@ PyDMCheckbox:checked { background-color: yellow }</string>
             <string>i400.py</string>
            </property>
            <property name="macros" stdset="0">
-            <string>{&quot;I400&quot;:&quot;XF:07ID-BI{DM7:I400-1}&quot; , &quot;Title&quot; : &quot;RSoXS Downstream Diagnostics&quot; , &quot;Ch1&quot; : &quot;Channel1&quot; , &quot;Ch2&quot; : &quot;Channel2&quot;, &quot;Ch3&quot; : &quot;Channel3&quot;, &quot;Ch4&quot; : &quot;Channel4";}</string>
+            <string>{&quot;I400&quot;:&quot;XF:07ID-BI{DM7:I400-1}&quot; , &quot;Title&quot; : &quot;RSoXS Downstream Diagnostics&quot; , &quot;Ch1&quot; : &quot;Channel1&quot; , &quot;Ch2&quot; : &quot;Channel2&quot;, &quot;Ch3&quot; : &quot;Channel3&quot;, &quot;Ch4&quot; : &quot;Channel4&quot;;}</string>
            </property>
            <property name="openInNewWindow" stdset="0">
             <bool>true</bool>
