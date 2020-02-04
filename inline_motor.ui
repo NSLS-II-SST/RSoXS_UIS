@@ -123,7 +123,35 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="27">
+     <item row="0" column="26">
+      <widget class="PyDMPushButton" name="PyDMPushButton_enable">
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Enable</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${MOTOR}_ENA_CMD.PROC</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="28">
       <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
        <property name="minimumSize">
         <size>
@@ -439,7 +467,7 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="26">
+     <item row="0" column="27">
       <widget class="PyDMPushButton" name="PyDMPushButton_3">
        <property name="minimumSize">
         <size>
