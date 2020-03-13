@@ -1292,7 +1292,7 @@ Module</string>
         <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07ID1-ES:1{GE:1}cam1:GreatEyesSync_RBV</string>
+        <string>ca://XF:07ID1-ES:1{GE:1}cam1:ShutterStatus_RBV</string>
        </property>
        <property name="showLabels" stdset="0">
         <bool>false</bool>
