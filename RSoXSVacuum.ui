@@ -1292,7 +1292,7 @@ Module</string>
         <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07ID1-ES:1{GE:1}cam1:ShutterStatus_RBV</string>
+        <string>ca://XF:07IDB-CT{DIODE-Local:1}OutPt01:Data-Sel</string>
        </property>
        <property name="showLabels" stdset="0">
         <bool>false</bool>
@@ -1311,7 +1311,7 @@ Module</string>
         <string>OPEN</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07ID1-ES:1{GE:1}cam1:ShutterControl</string>
+        <string>ca://XF:07IDB-CT{DIODE-Local:1}OutPt01:Data-Sel</string>
        </property>
        <property name="pressValue" stdset="0">
         <string>1</string>
@@ -1327,7 +1327,7 @@ Module</string>
         <string>CLOSE</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07ID1-ES:1{GE:1}cam1:ShutterControl</string>
+        <string>ca://XF:07IDB-CT{DIODE-Local:1}OutPt01:Data-Sel</string>
        </property>
        <property name="pressValue" stdset="0">
         <string>0</string>

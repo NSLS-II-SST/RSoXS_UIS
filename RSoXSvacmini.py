@@ -284,7 +284,7 @@ class RSoXSminivac(Display):
         self.PyDMByteIndicator_14.setProperty("channel", QtWidgets.QApplication.translate("", "ca://XF:07IDA-VA:2{FS:6-GV:2}Pos-Sts", None, -1))
         self.PyDMByteIndicator_7.setProperty("channel", QtWidgets.QApplication.translate("", "ca://XF:07IDB-VA:2{BT:1-GV:1}Pos-Sts", None, -1))
         self.MainCCG.setProperty("channel", QtWidgets.QApplication.translate("", "ca://XF:07IDB-VA:2{RSoXS:Main-CCG:1}P:Raw-I", None, -1))
-        self.PyDMByteIndicator_19.setProperty("channel", QtWidgets.QApplication.translate("", "ca://XF:07ID1-ES:1{GE:1}cam1:ShutterStatus_RBV", None, -1))
+        self.PyDMByteIndicator_19.setProperty("channel", QtWidgets.QApplication.translate("", "ca://XF:07IDB-CT{DIODE-Local:1}OutPt01:Data-Sel", None, -1))
         self.PyDMRelatedDisplayButton.setText(QtWidgets.QApplication.translate("", "Valve\n"
 "Control", None, -1))
         self.PyDMRelatedDisplayButton.setProperty("displayFilename", QtWidgets.QApplication.translate("", "RSoXSVacuum.ui", None, -1))

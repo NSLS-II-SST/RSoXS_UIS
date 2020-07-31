@@ -521,7 +521,7 @@ PyDMCheckbox:checked { background-color: yellow }</string>
             <bool>false</bool>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://XF:07ID1-CT{RG:C1-PDU:1}Sw:8-Sel</string>
+            <string>ca://XF:07ID-CT{RG:C1-PDU:1}Sw:8-Sel</string>
            </property>
           </widget>
          </item>
