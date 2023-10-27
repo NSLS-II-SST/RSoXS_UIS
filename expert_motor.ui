@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>409</width>
-    <height>454</height>
+    <height>753</height>
    </rect>
   </property>
   <property name="focusPolicy">
@@ -159,11 +159,11 @@
             <property name="whatsThis">
              <string/>
             </property>
-            <property name="alarmSensitiveContent" stdset="0">
-             <bool>false</bool>
-            </property>
             <property name="showUnits" stdset="0">
              <bool>true</bool>
+            </property>
+            <property name="alarmSensitiveContent" stdset="0">
+             <bool>false</bool>
             </property>
             <property name="channel" stdset="0">
              <string>ca://${MOTOR}.VAL</string>
@@ -219,147 +219,10 @@
             </property>
            </widget>
           </item>
-          <item row="9" column="0">
-           <widget class="QLabel" name="label_5">
-            <property name="text">
-             <string>Velocity:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="1">
-           <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="whatsThis">
-             <string/>
-            </property>
-            <property name="alarmSensitiveContent" stdset="0">
-             <bool>false</bool>
-            </property>
-            <property name="showUnits" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="channel" stdset="0">
-             <string>ca://${MOTOR}.VELO</string>
-            </property>
-            <property name="displayFormat" stdset="0">
-             <enum>PyDMLineEdit::Decimal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="0">
-           <widget class="QLabel" name="label_6">
-            <property name="text">
-             <string>Acceleration:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="1">
-           <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="whatsThis">
-             <string/>
-            </property>
-            <property name="alarmSensitiveContent" stdset="0">
-             <bool>false</bool>
-            </property>
-            <property name="showUnits" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="channel" stdset="0">
-             <string>ca://${MOTOR}.ACCL</string>
-            </property>
-            <property name="displayFormat" stdset="0">
-             <enum>PyDMLineEdit::Decimal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="0">
-           <widget class="QLabel" name="userOffsetLabel">
-            <property name="text">
-             <string>User Offset:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="1">
-           <widget class="PyDMLineEdit" name="userOffsetPyDMLineEdit">
-            <property name="showUnits" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="channel" stdset="0">
-             <string>ca://${MOTOR}.OFF</string>
-            </property>
-            <property name="displayFormat" stdset="0">
-             <enum>PyDMLineEdit::Decimal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="12" column="0">
-           <widget class="QLabel" name="negativeLimitLabel">
-            <property name="text">
-             <string>Negative Limit:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="12" column="1">
-           <widget class="PyDMLineEdit" name="negativeLimitPyDMLineEdit">
-            <property name="channel" stdset="0">
-             <string>ca://${MOTOR}.LLM</string>
-            </property>
-            <property name="displayFormat" stdset="0">
-             <enum>PyDMLineEdit::Decimal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="13" column="0">
-           <widget class="QLabel" name="positiveLimitLabel">
-            <property name="text">
-             <string>Positive Limit:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="13" column="1">
-           <widget class="PyDMLineEdit" name="positiveLimitPyDMLineEdit">
-            <property name="channel" stdset="0">
-             <string>ca://${MOTOR}.HLM</string>
-            </property>
-            <property name="displayFormat" stdset="0">
-             <enum>PyDMLineEdit::Decimal</enum>
-            </property>
-           </widget>
-          </item>
           <item row="4" column="0">
            <widget class="QLabel" name="encoderLossLabel">
             <property name="text">
              <string>Encoder Loss:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="PyDMLabel" name="PyDMLabel_3">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="text">
-             <string>None</string>
-            </property>
-            <property name="channel" stdset="0">
-             <string>ca://${MOTOR}_ENC_LSS_STS</string>
             </property>
            </widget>
           </item>
@@ -380,6 +243,29 @@
             </property>
             <property name="channel" stdset="0">
              <string>ca://${MOTOR}_FAFOE_STS</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="ampFaultLabel">
+            <property name="text">
+             <string>Amp Fault:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_6">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>None</string>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${MOTOR}_AMFE_STS</string>
             </property>
            </widget>
           </item>
@@ -412,29 +298,6 @@
             </property>
            </widget>
           </item>
-          <item row="6" column="0">
-           <widget class="QLabel" name="ampFaultLabel">
-            <property name="text">
-             <string>Amp Fault:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="1">
-           <widget class="PyDMLabel" name="PyDMLabel_6">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::NoFrame</enum>
-            </property>
-            <property name="text">
-             <string>None</string>
-            </property>
-            <property name="channel" stdset="0">
-             <string>ca://${MOTOR}_AMFE_STS</string>
-            </property>
-           </widget>
-          </item>
           <item row="8" column="0">
            <widget class="QLabel" name="openLoopLabel">
             <property name="text">
@@ -455,20 +318,197 @@
             </property>
            </widget>
           </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Velocity:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="alarmSensitiveContent" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${MOTOR}.VELO</string>
+            </property>
+            <property name="displayFormat" stdset="0">
+             <enum>PyDMLineEdit::Decimal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Acceleration:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="1">
+           <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="alarmSensitiveContent" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${MOTOR}.ACCL</string>
+            </property>
+            <property name="displayFormat" stdset="0">
+             <enum>PyDMLineEdit::Decimal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="0">
+           <widget class="QLabel" name="userOffsetLabel">
+            <property name="text">
+             <string>User Offset:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="1">
+           <widget class="PyDMLineEdit" name="userOffsetPyDMLineEdit">
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${MOTOR}.OFF</string>
+            </property>
+            <property name="displayFormat" stdset="0">
+             <enum>PyDMLineEdit::Decimal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="0">
+           <widget class="QLabel" name="negativeLimitLabel">
+            <property name="text">
+             <string>Negative Limit:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="1">
+           <widget class="PyDMLineEdit" name="negativeLimitPyDMLineEdit">
+            <property name="channel" stdset="0">
+             <string>ca://${MOTOR}.LLM</string>
+            </property>
+            <property name="displayFormat" stdset="0">
+             <enum>PyDMLineEdit::Decimal</enum>
+            </property>
+           </widget>
+          </item>
           <item row="14" column="0">
+           <widget class="QLabel" name="positiveLimitLabel">
+            <property name="text">
+             <string>Positive Limit:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="1">
+           <widget class="PyDMLineEdit" name="positiveLimitPyDMLineEdit">
+            <property name="channel" stdset="0">
+             <string>ca://${MOTOR}.HLM</string>
+            </property>
+            <property name="displayFormat" stdset="0">
+             <enum>PyDMLineEdit::Decimal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="0">
            <widget class="QLabel" name="SetLabel2">
             <property name="text">
              <string>Set Position:</string>
             </property>
            </widget>
           </item>
-          <item row="14" column="1">
+          <item row="15" column="1">
            <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_useorset">
             <property name="toolTip">
              <string/>
             </property>
             <property name="channel" stdset="0">
              <string>ca://${MOTOR}.SET</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_3">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>none</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${MOTOR}_ENC_LSS_STS</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMPushButton" name="PyDMPushButton">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Clear</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${MOTOR}_ENC_LSS_CLR_CMD.PROC</string>
+              </property>
+              <property name="showConfirmDialog" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="pressValue" stdset="0">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Home Velocity</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${MOTOR}_HVEL_SP.A</string>
             </property>
            </widget>
           </item>
@@ -488,14 +528,19 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
+   <class>PyDMEnumComboBox</class>
+   <extends>QComboBox</extends>
+   <header>pydm.widgets.enum_combo_box</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
-   <class>PyDMEnumComboBox</class>
-   <extends>QComboBox</extends>
-   <header>pydm.widgets.enum_combo_box</header>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
   </customwidget>
  </customwidgets>
  <resources/>

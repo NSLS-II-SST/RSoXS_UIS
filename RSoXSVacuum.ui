@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>912</width>
-    <height>398</height>
+    <width>1160</width>
+    <height>502</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,8 +18,8 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>626</width>
-    <height>398</height>
+    <width>1050</width>
+    <height>500</height>
    </size>
   </property>
   <property name="maximumSize">
@@ -28,6 +28,11 @@
     <height>600</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <pointsize>7</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>RSoXS Vacuum Monitor</string>
   </property>
@@ -35,6 +40,21 @@
    <double>0.700000000000000</double>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>5</number>
+   </property>
+   <property name="leftMargin">
+    <number>1</number>
+   </property>
+   <property name="topMargin">
+    <number>1</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
    <item>
     <layout class="QGridLayout" name="gridLayout">
      <property name="leftMargin">
@@ -49,6 +69,9 @@
      <property name="bottomMargin">
       <number>6</number>
      </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="11" column="0">
       <widget class="PyDMPushButton" name="PyDMPushButton_9">
        <property name="minimumSize">
@@ -56,6 +79,11 @@
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -68,23 +96,6 @@
        </property>
        <property name="pressValue" stdset="0">
         <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="2" colspan="2">
-      <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>RSoXS Sample
-Chamber</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
@@ -122,6 +133,11 @@ Chamber</string>
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -138,15 +154,30 @@ Chamber</string>
      </item>
      <item row="10" column="6">
       <widget class="PyDMLabel" name="PyDMLabel_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="font">
         <font>
-         <pointsize>16</pointsize>
+         <pointsize>5</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://XF:07IDB-VA:2{RSoXS:DM-CCG:1}P:Raw-I</string>
@@ -173,6 +204,11 @@ Chamber</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -203,6 +239,11 @@ Chamber</string>
      </item>
      <item row="8" column="2" colspan="2">
       <widget class="PyDMLabel" name="MainPG">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -241,6 +282,11 @@ Chamber</string>
      </item>
      <item row="6" column="14">
       <widget class="QLabel" name="label_14">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>PSH1</string>
        </property>
@@ -251,6 +297,11 @@ Chamber</string>
      </item>
      <item row="6" column="12">
       <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>GV14</string>
        </property>
@@ -266,6 +317,11 @@ Chamber</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -283,6 +339,11 @@ Chamber</string>
      </item>
      <item row="6" column="4">
       <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>GV 27A</string>
        </property>
@@ -293,6 +354,11 @@ Chamber</string>
      </item>
      <item row="6" column="9">
       <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>PSH10</string>
        </property>
@@ -308,6 +374,11 @@ Chamber</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -331,6 +402,11 @@ Chamber</string>
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -347,6 +423,11 @@ Chamber</string>
      </item>
      <item row="8" column="6">
       <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -392,6 +473,11 @@ Chamber</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -455,6 +541,11 @@ Chamber</string>
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -471,21 +562,30 @@ Chamber</string>
      </item>
      <item row="10" column="2" colspan="2">
       <widget class="PyDMLabel" name="MainCCG">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="minimumSize">
         <size>
-         <width>110</width>
+         <width>150</width>
          <height>0</height>
         </size>
        </property>
        <property name="font">
         <font>
-         <pointsize>16</pointsize>
+         <pointsize>5</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="showUnits" stdset="0">
         <bool>true</bool>
@@ -502,6 +602,11 @@ Chamber</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -524,6 +629,11 @@ Chamber</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -574,6 +684,11 @@ Chamber</string>
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -590,6 +705,11 @@ Chamber</string>
      </item>
      <item row="6" column="11">
       <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>GV14A</string>
        </property>
@@ -663,6 +783,11 @@ Chamber</string>
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -685,6 +810,11 @@ Chamber</string>
      </item>
      <item row="4" column="2" colspan="2">
       <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -703,6 +833,11 @@ Chamber</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -726,6 +861,11 @@ Chamber</string>
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -740,49 +880,32 @@ Chamber</string>
        </property>
       </widget>
      </item>
-     <item row="5" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_5">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="2" rowspan="2" colspan="2">
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::NoFrame</enum>
-       </property>
-       <property name="text">
-        <string>Load Lock</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
      <item row="2" column="2" colspan="2">
       <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="font">
         <font>
-         <pointsize>16</pointsize>
+         <pointsize>5</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://XF:07IDB-VA:2{RSoXS:LL-CCG:1}P:Raw-I</string>
@@ -796,6 +919,11 @@ Chamber</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -846,6 +974,11 @@ Chamber</string>
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -862,8 +995,15 @@ Chamber</string>
      </item>
      <item row="9" column="6">
       <widget class="QLabel" name="label_3">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="font">
         <font>
+         <pointsize>5</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -906,6 +1046,11 @@ Module</string>
      </item>
      <item row="6" column="0">
       <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>PSH7</string>
        </property>
@@ -916,6 +1061,11 @@ Module</string>
      </item>
      <item row="6" column="8">
       <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>GV 26</string>
        </property>
@@ -931,6 +1081,11 @@ Module</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -981,6 +1136,11 @@ Module</string>
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -1002,6 +1162,11 @@ Module</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -1059,6 +1224,11 @@ Module</string>
      </item>
      <item row="6" column="1">
       <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>GV 28</string>
        </property>
@@ -1069,6 +1239,11 @@ Module</string>
      </item>
      <item row="6" column="10">
       <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>GV15</string>
        </property>
@@ -1084,6 +1259,11 @@ Module</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -1106,6 +1286,11 @@ Module</string>
          <width>50</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -1150,6 +1335,11 @@ Module</string>
      </item>
      <item row="6" column="13">
       <widget class="QLabel" name="label_13">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>PSH4</string>
        </property>
@@ -1160,6 +1350,11 @@ Module</string>
      </item>
      <item row="6" column="7">
       <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>GV 27</string>
        </property>
@@ -1176,6 +1371,11 @@ Module</string>
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -1190,13 +1390,109 @@ Module</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="4" rowspan="5" colspan="11">
+     <item row="4" column="0">
+      <widget class="PyDMPushButton" name="PyDMPushButton_IPon">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>IP HV OFF</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-IP:1}Cmd:HV_Off-Cmd</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="QLabel" name="label_15">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Fast Shutter</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="5" rowspan="3">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_18">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-CT{DIODE-Local:1}OutPt01:Data-Sel</string>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="circles" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="5">
+      <widget class="PyDMPushButton" name="PyDMPushButton_23">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>OPEN</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-CT{DIODE-Local:1}OutPt01:Data-Sel</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="5">
+      <widget class="PyDMPushButton" name="PyDMPushButton_24">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>CLOSE</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-CT{DIODE-Local:1}OutPt01:Data-Sel</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" rowspan="6" colspan="11">
       <widget class="PyDMTimePlot" name="PyDMTimePlot">
        <property name="minimumSize">
         <size>
          <width>0</width>
          <height>200</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>6</pointsize>
+        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -1266,71 +1562,208 @@ Module</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+     <item row="5" column="3">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
-       <property name="showUnits" stdset="0">
-        <bool>true</bool>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
        </property>
        <property name="channel" stdset="0">
         <string>ca://XF:07IDB-VA:2{RSoXS:LL-CCG:1}Pwr-Cmd</string>
        </property>
-      </widget>
-     </item>
-     <item row="6" column="5">
-      <widget class="QLabel" name="label_15">
-       <property name="text">
-        <string>Fast Shutter</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="5" rowspan="3">
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_18">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-CT{DIODE-Local:1}OutPt01:Data-Sel</string>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="circles" stdset="0">
+       <property name="invertOrder" stdset="0">
         <bool>true</bool>
        </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>1</number>
+       </property>
       </widget>
      </item>
-     <item row="7" column="5">
-      <widget class="PyDMPushButton" name="PyDMPushButton_23">
+     <item row="9" column="2">
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RSoXS
+Sample
+Chamber</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-CCG:1}Pwr-Cmd</string>
+       </property>
+       <property name="invertOrder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="widgetType" stdset="0">
+        <enum>PyDMEnumButton::PushButton</enum>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLabel" name="label_2">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>Load
+Lock</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="PyDMPushButton" name="PyDMPushButton_IPon">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="text">
-        <string>OPEN</string>
+        <string>IP HV ON</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-CT{DIODE-Local:1}OutPt01:Data-Sel</string>
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-IP:1}Cmd:HV_On-Cmd</string>
        </property>
        <property name="pressValue" stdset="0">
         <string>1</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="5">
-      <widget class="PyDMPushButton" name="PyDMPushButton_24">
+     <item row="3" column="1" rowspan="2">
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_11">
        <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>CLOSE</string>
+        <string>Not Closed</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://XF:07IDB-CT{DIODE-Local:1}OutPt01:Data-Sel</string>
+        <string>ca://XF:07IDB-VA:2{RSoXS:Main-IP:1}Sts:HV-Sts</string>
        </property>
-       <property name="pressValue" stdset="0">
-        <string>0</string>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -1355,9 +1788,9 @@ Module</string>
    <header>pydm.widgets.byte</header>
   </customwidget>
   <customwidget>
-   <class>PyDMEnumComboBox</class>
-   <extends>QComboBox</extends>
-   <header>pydm.widgets.enum_combo_box</header>
+   <class>PyDMEnumButton</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.enum_button</header>
   </customwidget>
   <customwidget>
    <class>PyDMPushButton</class>

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1060</width>
+    <width>1535</width>
     <height>927</height>
    </rect>
   </property>
@@ -18,6 +18,9 @@
     <widget class="PyDMTimePlot" name="I400Plot">
      <property name="toolTip">
       <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
      </property>
      <property name="showRightAxis">
       <bool>true</bool>
@@ -59,15 +62,15 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
-       <property name="toolTip">
-        <string/>
+      <widget class="QDoubleSpinBox" name="TimeSpan">
+       <property name="minimum">
+        <double>10.000000000000000</double>
        </property>
-       <property name="channel" stdset="0">
-        <string>ca://${I400}:GETCS2.SCAN</string>
+       <property name="maximum">
+        <double>30000.000000000000000</double>
        </property>
-       <property name="showUnits" stdset="0">
-        <bool>true</bool>
+       <property name="value">
+        <double>300.000000000000000</double>
        </property>
       </widget>
      </item>
@@ -104,25 +107,171 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="TimeSpan">
-       <property name="minimum">
-        <double>10.000000000000000</double>
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_5">
+       <property name="toolTip">
+        <string/>
        </property>
-       <property name="maximum">
-        <double>30000.000000000000000</double>
+       <property name="channel" stdset="0">
+        <string>ca://${I400}:CAP_SP</string>
        </property>
-       <property name="value">
-        <double>300.000000000000000</double>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMLabel" name="PyDMLabel_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${I400}:CAP_STS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="precision" stdset="0">
+        <number>2</number>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${I400}:PERIOD_SP</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::Exponential</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="precision" stdset="0">
+        <number>4</number>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${I400}:PERIOD_MON</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMLabel" name="PyDMLabel_5">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="precision" stdset="0">
+        <number>2</number>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${I400}:RANGE_MON</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Exponential</enum>
        </property>
       </widget>
      </item>
      <item>
       <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${I400}:RANGE_BP</string>
+        <string>ca://${I400}:RANGE</string>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMPushButton" name="PyDMPushButton_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Set Range</string>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${I400}:SET_RANGE</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+       <property name="maximumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${I400}:SET_RANGE.DISA</string>
+       </property>
+       <property name="onColor" stdset="0">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
        </property>
        <property name="showUnits" stdset="0">
         <bool>true</bool>
@@ -133,6 +282,22 @@
    </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="PyDMEnumButton" name="PyDMEnumButton">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${I400}:ENABLE_IC_UPDATES</string>
+       </property>
+       <property name="items" stdset="0">
+        <stringlist>
+         <string>Enable</string>
+         <string>Disable</string>
+        </stringlist>
+       </property>
+      </widget>
+     </item>
      <item>
       <widget class="PyDMLineEdit" name="PyDMLineEdit">
        <property name="toolTip">
@@ -168,6 +333,19 @@
       </widget>
      </item>
      <item>
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_6">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${I400}:TRIGCOUNT_MON.SCAN</string>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_3">
        <property name="toolTip">
         <string/>
@@ -198,6 +376,11 @@
    <header>pydm.widgets.byte</header>
   </customwidget>
   <customwidget>
+   <class>PyDMEnumButton</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMEnumComboBox</class>
    <extends>QComboBox</extends>
    <header>pydm.widgets.enum_combo_box</header>
@@ -206,6 +389,11 @@
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
   </customwidget>
  </customwidgets>
  <resources/>

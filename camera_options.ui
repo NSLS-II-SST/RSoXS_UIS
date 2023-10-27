@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>194</width>
-    <height>555</height>
+    <width>525</width>
+    <height>715</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>183</width>
-    <height>273</height>
+    <width>525</width>
+    <height>0</height>
    </size>
   </property>
   <property name="focusPolicy">

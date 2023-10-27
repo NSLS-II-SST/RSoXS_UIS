@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>680</width>
-    <height>25</height>
+    <width>1661</width>
+    <height>58</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -49,30 +49,67 @@
      </item>
      <item>
       <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="precision" stdset="0">
-        <number>0</number>
+        <number>2</number>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}X}Mtr_SP</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLineEdit::Decimal</enum>
        </property>
       </widget>
      </item>
      <item>
       <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>6</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
        <property name="precision" stdset="0">
         <number>2</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}X}Mtr_MON</string>
@@ -97,30 +134,67 @@
      </item>
      <item>
       <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="precision" stdset="0">
-        <number>0</number>
+        <number>2</number>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}Y}Mtr_SP</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLineEdit::Decimal</enum>
        </property>
       </widget>
      </item>
      <item>
       <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>6</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
        <property name="precision" stdset="0">
         <number>2</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}Y}Mtr_MON</string>
@@ -145,27 +219,67 @@
      </item>
      <item>
       <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
+       <property name="precision" stdset="0">
+        <number>2</number>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}Z}Mtr_SP</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLineEdit::Decimal</enum>
        </property>
       </widget>
      </item>
      <item>
       <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>6</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
        <property name="precision" stdset="0">
         <number>2</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}Z}Mtr_MON</string>
@@ -176,7 +290,7 @@
       <widget class="QLabel" name="label_4">
        <property name="minimumSize">
         <size>
-         <width>35</width>
+         <width>60</width>
          <height>0</height>
         </size>
        </property>
@@ -190,27 +304,67 @@
      </item>
      <item>
       <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
+       <property name="precision" stdset="0">
+        <number>2</number>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}P}Mtr_SP</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLineEdit::Decimal</enum>
        </property>
       </widget>
      </item>
      <item>
       <widget class="PyDMLabel" name="PyDMLabel_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>6</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
        <property name="precision" stdset="0">
         <number>2</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}P}Mtr_MON</string>
@@ -221,7 +375,7 @@
       <widget class="QLabel" name="label_5">
        <property name="minimumSize">
         <size>
-         <width>35</width>
+         <width>60</width>
          <height>0</height>
         </size>
        </property>
@@ -235,27 +389,67 @@
      </item>
      <item>
       <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
+       <property name="precision" stdset="0">
+        <number>2</number>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}R}Mtr_SP</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLineEdit::Decimal</enum>
        </property>
       </widget>
      </item>
      <item>
       <widget class="PyDMLabel" name="PyDMLabel_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>6</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
        <property name="precision" stdset="0">
         <number>2</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}R}Mtr_MON</string>
@@ -266,7 +460,7 @@
       <widget class="QLabel" name="label_6">
        <property name="minimumSize">
         <size>
-         <width>35</width>
+         <width>60</width>
          <height>0</height>
         </size>
        </property>
@@ -280,27 +474,67 @@
      </item>
      <item>
       <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
+       <property name="precision" stdset="0">
+        <number>2</number>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}Yaw}Mtr_SP</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLineEdit::Decimal</enum>
        </property>
       </widget>
      </item>
      <item>
       <widget class="PyDMLabel" name="PyDMLabel_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>6</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
        <property name="precision" stdset="0">
         <number>2</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${MIR}Yaw}Mtr_MON</string>

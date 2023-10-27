@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>782</width>
+    <height>504</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,7 +28,7 @@
         <string>camera_options.ui</string>
        </property>
        <property name="macros" stdset="0">
-        <string/>
+        <stringlist/>
        </property>
        <property name="openInNewWindow" stdset="0">
         <bool>true</bool>
@@ -36,12 +36,39 @@
       </widget>
      </item>
      <item row="0" column="0">
-      <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+      <widget class="PyDMImageView" name="PyDMImageView">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
-       <property name="filename" stdset="0">
-        <string>pydm-examples\image_processing\image_view.py</string>
+       <property name="colorMap" stdset="0">
+        <enum>PyDMImageView::Monochrome</enum>
+       </property>
+       <property name="normalizeData" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="readingOrder" stdset="0">
+        <enum>PyDMImageView::Clike</enum>
+       </property>
+       <property name="imageChannel" stdset="0">
+        <string>ca://${CAM}image1:ArrayData</string>
+       </property>
+       <property name="widthChannel" stdset="0">
+        <string>ca://${CAM}image1:ArraySize0_RBV</string>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -51,9 +78,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEmbeddedDisplay</class>
-   <extends>QFrame</extends>
-   <header>pydm.widgets.embedded_display</header>
+   <class>PyDMImageView</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.image</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
